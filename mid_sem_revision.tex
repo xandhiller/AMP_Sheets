@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\author{Alex Hiller}
+\title{Mid-Semester Revision Session: AMP}
+
+\begin{document}
+
+
+% Topics:
+% Line integrals
+% Conservative fields
+% Potential Functions
+% Work done in a force field
+% Parameterisation
+% 
+
+
+% Question One: Chapter 6.1, Example 11
+\section{}
+
+  Calculate the work done by the force:
+  $$ 
+    \mathbf{F} = x \mathbf{i} - y \mathbf{j} + (x + y + z) \mathbf{k}     
+  $$
+
+  Along the curve:
+  $$
+    y = 3x^2    \qquad \text{from} \ (0,0,0)  \rightarrow (2,12,0)
+  $$
+
+  
+\clearpage
+
+
+% Question Two: Chapter 6.3, Example 8
+\section{}
+
+  Determine if the following vector field is conservative:
+  $$
+    \mathbf{F} \ = \ (e^x \sin y - y z ) \mathbf{i} \ + \  (e^x \cos y - x z ) \mathbf{j} \ + \  (z - x y)  \mathbf{k}
+  $$
+
+\clearpage
+
+
+% Question Three: Chapter 6.3, Example 7
+\section{}
+
+  (i) Find the potential function $f$ of:
+    $$
+      \mathbf{F} \ = \ (2xy + \cos 2y) \mathbf{i} \ + \  (x^2 - 2 x \sin 2y) \mathbf{j} 
+    $$
+
+  (ii) What is the gradient field of $f$?
+
+
+\clearpage
+
+% Question Four: Self Made
+\section{}
+
+  Calculate: 
+  $$  
+    \int_C (x^3y^2) \ dx  \ + \ (y^3 z ) \ dy \ + \ (\frac{zxy}{4}) dz 
+    \qquad
+    C: \  \ (0,0,0) \ \rightarrow \ (2,2,2)
+  $$
+
+
+
+
+\clearpage
+
+
+% Formulae
+\section{Useful Formulae}
+
+  \subsection{Green's Theorem}
+    $$
+      \oint_C P \ dx \ + \ Q \ dy \ =
+      \ \int \int_D \bigg( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \bigg) \ dA
+    $$
+
+  \subsection{Calculating Parameterised Vector Line Integrals}
+    $$
+      \int \mathbf{F} \cdot d\mathbf{s} \ =  \int \mathbf{F} \big( \mathbf{r} \big) \cdot \|   \mathbf{ r'  } (t)  \| \ dt
+    $$
+
+  \subsection{Curl}
+    $$
+      \nabla \times \mathbf{F} \ \  \text{(vector field)} \qquad \nabla^{2} f \ \ \text{(scalar field)}
+    $$
+
+  \subsection{}
+
+
+\end{document}
