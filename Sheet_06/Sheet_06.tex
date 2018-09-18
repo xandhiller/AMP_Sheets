@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\author{Alex Hiller}
+\title{AMP Sheet 06}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+
+\begin{document}
+% Useful Formulae
+%% Evaluations of complex numbers
+%% Euler's Formula
+%% The Cauchy Riemann Equations for Analyticity (Holomorphism)
+%% De Moivre's Theorem
+
+\paragraph{Week 8 \\ AMP Sheet 06}
+
+\paragraph{Useful Formulae} \
+
+  Conjugate
+  $$
+    z = x +jy \Rightarrow \bar{z} = x - jy
+  $$ \\
+
+  Real part
+  $$
+    \Re \{ z \}  = \frac{1}{2} \big( z + \bar{z}  \big)    
+  $$ \\ 
+
+  Imaginary part
+  $$
+    \Im \{ z \} = \frac{1}{j2} \big( z - \bar{z} \big)
+  $$ \\
+
+  Squaring a complex number
+  $$
+    z\bar{z} = | z |^{2}
+  $$ \\
+
+  Simplifying complex numbers in the denominator
+  $$
+    z = x + jy \Rightarrow \frac{1}{z} = \frac{1}{x+jy} = \frac{1}{x+jy}\frac{(x-jy)}{(x-jy)} = \frac{x}{x^2 + y^2} + j \ \frac{-y}{x^2 + y^2}
+  $$ \\
+
+\paragraph{Drills} \ 
+  
+  \textbf{1.} Express $(-1 + j3)^{-1}$ in polar form. \\ \\
+  \textbf{2.} You have: $$\frac{2+j}{2-j}$$ and need to express it as $x+jy$ to enter it into a MATLAB function -- what is $x$ and what is $y$? \\ \\
+  \textbf{3.} You have a function to describe the output of your modelled system as: $$e^{st}$$ $$\big(\text{where } s = \sigma + j \omega)$$ You must find the amplitude of the output to ensure it doesn't exceed the ratings of your electrical components. What is the mathematical expression for the amplitude, $A$? \\ 
+
+\paragraph{De Moivre's Theorem} \
+
+   \textbf{4.} Using de Moivre's theorem, find: $$z^{10} =  2 \ \angle{\frac{\pi}{2}}$$ 
+ 
+  \textbf{5.} Using de Moivre's theorem, find: $$\sqrt[3]{e^{j\frac{\pi}{4}}} $$ 
+
+\paragraph{Satisfying Proofs} \
+
+
+  \textbf{6.} Use the Euler's formula, $\Re{\{ z \}}$ and $\Im{\{z\}}$ to prove the double-angle formulae of $\sin(\theta + \phi)$ and $\cos(\theta + \phi)$ \\
+
+  \textbf{7.} You only have the value of $\tan(\theta)$ and want to find the tangent of triple the angle. Using de Moivre's Theorem and $z = 1 + \tan(\theta)$, find the expression for: $$\tan(3\theta) $$
+
+
+  
+
+  
+
+
+% Finding roots of complex numbers
+
+
+% Evaluating complex logarithms
+
+
+% Analyticity 
+
+
+
+\end{document}
