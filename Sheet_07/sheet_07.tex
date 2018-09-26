@@ -6,16 +6,21 @@
 \title{}
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{0.125cm}
+\newcommand{\question}[1]{\textbf{#1} \\}   % Formatting for a question
+\renewcommand{\vector}[1]{\mathbf{#1}}      % Math-mode vector
+\newcommand{\ilvector}[1]{$\mathbf{#1}$}    % Inline vector
 
 \begin{document}
+\pagenumbering{gobble}    % Remove page numbers
 
-\paragraph{AMP Sheet 7}
+\textbf{AMP Sheet 7} \\
 
+\textbf{Tips} \\
 $$
 \text{Holomorphic } \equiv \text{ Analytic } \equiv \text{ Differentiable }
 $$
 
-Cauchy-Riemann Equations to test for Differentiability \\ For a complex function defined as:
+\textbf{Cauchy-Riemann Equations to test for Differentiability} \\ For a complex function defined as:
 $$
 f(z) = u(x,y) + j v(x,y)
 $$
@@ -24,7 +29,38 @@ $$
 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} 
 \quad \text{ and } \quad
 \frac{\partial u}{\partial y} = - \frac{\partial v}{\partial x}
+$$ \\
+
+
+
+\question{1. Find the values of $a$ and $b$ such that $f$ is analytic}
 $$
+f(z) = 3x-2y^2 + j(2ax + 5by)
+$$ 
+
+\question{\\2. Prove that $\sin^2(z) + \cos^2(z) = 1$ holds for the complex variable $z$} \\
+
+\question{3. Find the following to 4 decimal places and represent in cartesian form.} 
+
+\begin{centering}
+(a) $\sin(2\pi - j3)$ \qquad
+(b) $\cos^2(j2) $ \qquad
+(c) $j^{-j2}$ 
+
+\end{centering} 
+
+\question{\\4. For the complex number $z = x+jy$ evaluate the function $f(z)$ with the given points:}
+$$
+f(z) = 3x^2 + 2x^2 - 2xy +y^2
+$$
+
+
+\begin{centering}
+(a) $-j3$ \qquad
+(b) $1+j2 $ \qquad
+(c) $2+j\sqrt2$ 
+
+\end{centering} 
 
 
 \end{document}
