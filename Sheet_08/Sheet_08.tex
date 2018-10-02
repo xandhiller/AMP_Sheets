@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \author{Alex Hiller}
 \title{}
@@ -14,8 +15,7 @@
 
 \begin{document}
 
-\big{Hello}
-
+% Preamble
 Review: \\
 \question{- What is a sequence?           \\
           - What is a series?             \\
@@ -40,20 +40,33 @@ Review: \\
   \lim_{n \rightarrow \infty} \sqrt[n]{|z^n|} \ = L
 \eeq \\
 
+% Questions
 
-\question{1. Using partial sums, find the conditions on $z$ for the following series to be convergent}
+\question{1.\\ Using partial sums, find the conditions on $z$ for the following series to be convergent}
 \begeq{q2}
   \sum^{\infty}_{k=1} az^{k-1}
 \eeq \\
 
 
 \question{2.\\ }
-\question{(i)  Define the "radius of convergence" \\ }
+\question{(i)  Define the terms \textit{radius of convergence} and \textit{circle of convergence} \\ }
 \question{(ii) For the series, find its radius of convergence}
   \begeq{rad_of_conv}
-    \sum
+    \sum^{\infty}_{k=1} (a_n)^k (z - j5)^k 
+    \qquad \qquad \text{where: \ \ }a_n = \frac{12k+3}{4k+5}
   \eeq \\
 
-\question{3. What is a Maclaurin Series? Why might we use it?}
+\question{3. \\}
+\question{(i) What is a Maclaurin Series \\ }
+\question{(ii)What is its relation to a Taylor Series? \\}
+\question{(iii) Why might we use it?\\ }
+\question{(iv) What is the formula for a Maclaurin Series? }
+
+\question{4. Given that $z \in \mathbb{C}$, expand the following function into a Maclaurin series}
+  \begeq{common_function}
+    f(z) = \frac{1}{1-z}
+  \eeq
+
+
 
 \end{document}
