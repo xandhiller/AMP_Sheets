@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\author{Alex Hiller}
+\title{}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+\newcommand{\begeq}[1]{\begin{equation} \label{eq:#1}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\question}[1]{\textbf{#1} \\}   % Formatting for a question
+\renewcommand{\vector}[1]{\mathbf{#1}}      % Math-mode vector
+\newcommand{\ilvector}[1]{$\mathbf{#1}$}    % Inline vector
+
+\begin{document}
+
+\big{Hello}
+
+Review: \\
+\question{- What is a sequence?           \\
+          - What is a series?             \\
+          - What is a divergent series?   \\
+          - What is a convergent series?  \\
+          - What is a Taylor series?      }
+
+\textbf{Tips:\\}
+
+\begeq{partial_sum}
+  \text{Partial sum: \ \ \ }
+  S_n = z_1 + z_2 + z_3 + ... + z_n
+\eeq 
+
+\begeq{ratio_test}
+  \text{Ratio test: \ \ \ }
+  \lim_{n \rightarrow \infty} \bigg| \frac{z_{n+1}}{z_n}  \bigg| = L
+\eeq
+
+\begeq{root_test}
+  \text{Root test: \ \ \ }
+  \lim_{n \rightarrow \infty} \sqrt[n]{|z^n|} \ = L
+\eeq \\
+
+
+\question{1. Using partial sums, find the conditions on $z$ for the following series to be convergent}
+\begeq{q2}
+  \sum^{\infty}_{k=1} az^{k-1}
+\eeq \\
+
+
+\question{2.\\ }
+\question{(i)  Define the "radius of convergence" \\ }
+\question{(ii) For the series, find its radius of convergence}
+  \begeq{rad_of_conv}
+    \sum
+  \eeq \\
+
+\question{3. What is a Maclaurin Series? Why might we use it?}
+
+\end{document}
