@@ -1,0 +1,110 @@
+\documentclass{article}
+\author{Alex Hiller}
+\title{Embedded Deformation of 3D Heart Image}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+\pagenumbering{gobble}
+\usepackage[margin=3cm]{geometry} % Formatting
+
+% Packages
+\usepackage{amsmath}              % Mathematics
+\usepackage{amssymb}
+\usepackage{listings}             % Listings
+\usepackage{color}                % Listings
+\usepackage{courier}              % Listings
+
+% Custom Commands
+\newcommand{\vc}[2]{\mathbf{#1}_{#2}}
+% Questions and Answers
+\AtEndDocument{\clearpage \textbf{Questions:} \newline \newline}
+\newcommand{\qanda}[2]{\AtEndDocument{\stepcounter{question}Q\arabic{question}. \textit{#1} \vspace{2mm}\newline \AtEndDocument{A\arabic{question}. #2 \newline \newline}}}
+
+% Listing Pre-Requisites
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+\lstset{style=mystyle} 
+
+
+\begin{document}
+
+\textbf{Useful Formulae:\\}
+
+Residue Theorem:
+\begin{equation}
+  2 \pi i\sum^{m}_{k=1} \frac{1}{(n-1)!} \frac{d^{n-1}}{ds^{n-1}}  \lim_{s \to s_k}(s-s_k)^n F(s)
+\end{equation} \\
+
+Using Residue Theorem for Inverse Laplace Transforms:
+\begin{equation}
+  \sum^{m}_{k=1} \frac{1}{(n-1)!} \frac{d^{n-1}}{ds^{n-1}}  \lim_{s \to s_k}(s-s_k)^n e^{st}  F(s)
+\end{equation}
+
+\textbf{Useful Theorems: \\}
+
+For a simply connected domain:
+
+\begin{equation}
+  \oint_{C} f(z) dz = 0
+\end{equation} \\
+
+Cauchy-Gorsat Theorem: \\
+For a domain with discontinuities and $C_1$ and $C_2$ both loop around those discontinuities:
+\begin{equation}
+  \oint_{C_1} f(z) dz = \oint_{C_2} f(z) dz
+\end{equation}
+
+More general Cauchy-Gorsat Theorem:
+\begin{equation}
+  \oint_{C_1} f(z) dz = \sum^{k}_{n=2} \oint_{C_n} f(z) dz
+\end{equation}
+
+\clearpage
+\textbf{Questions: \\}
+
+1. Evaluate 
+\begin{equation}
+  \oint_C \frac{dz}{z-i}
+\end{equation}
+
+Where $C$ is the contour [1,1] \to [-1,1] \to [-1,-1] \to [1,-1] \to [1,1] \\
+
+2. Using residue theorem, evaluate:
+\begin{equation}
+  \mathcal{L}^{-1} \left\{ \frac{\omega}{s^2 + \omega^2} \right\}
+\end{equation} \\
+
+3. Using residue theorem, evaluate:
+\begin{equation}
+  \mathcal{L}^{-1} \left\{ \frac{s}{s^2 + \omega^2} \right\}
+\end{equation} \\ 
+
+\textbf{Challenge question:}
+
+4. Using frequency domain techniques and Residue Theorem, solve the following question: \\
+
+A switch closes on an RL circuit at t=0 that now connects it to an input of $v(t) = sin(\omega t + \phi)$ \\ 
+
+Find the function $i(t)$ for $t>0$
+
+
+\end{document}
