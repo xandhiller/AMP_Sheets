@@ -1,0 +1,95 @@
+\documentclass{article}
+\author{Alex Hiller}
+\title{<++>}
+
+% Type-setting
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+\pagenumbering{gobble}
+\usepackage[margin=2.5cm]{geometry} % Formatting
+
+% Packages
+\usepackage{biblatex}  % Referencing
+\addbibresource{/home/polluticorn/GitHub/configuration/list.bib}
+\usepackage{amsmath}                  % Mathematics
+\usepackage{amssymb}                  % Mathematics
+\usepackage{esint}                    % Math Symbols
+\usepackage{listings}                 % Listings
+\usepackage{color}                    % Listings
+%\usepackage{courier}                  % Listings
+\usepackage{circuitikz}               % Circuits
+\usepackage{titlesec}                 % Section Formatting
+
+% Code Formatting 
+\input{/home/polluticorn/GitHub/texTemplates/codeFormat}
+
+% Math Macros
+\input{/home/polluticorn/GitHub/texTemplates/mathMacros}
+
+% Section formatting
+\titleformat{\section}{\huge \bfseries}{}{0em}{}[]
+\titleformat{\subsection}{\Large \bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\bfseries}{}{0em}{}
+
+% Note Taking Macros
+\input{/home/polluticorn/GitHub/texTemplates/noteTaking}
+
+\begin{document}
+% \AtEndDocument{\printbibliography}
+
+\begin{huge} \textbf{Advanced Mathematics & Physics - Sheet 10} \end{huge}
+
+\section{Formulae}
+
+Gauss/Divergence Theorem
+
+\begin{equation}
+  \oiint_{\partial D} \vc{F}{} \cdot d \mathbf{S}
+  = \iiint_{D} \nabla \cdot \vc{F}{} \ dV
+\end{equation}
+
+
+\section{Question 1}
+
+Consider the field:
+
+\begin{equation}
+  \vc{F}{} = x \mathbf{i} + y \mathbf{j} + z \mathbf{k}
+\end{equation}
+
+Find the flux of this field through the surface:
+
+\begin{equation}
+  0 \leq z \leq 9 - x^2 - y^2
+\end{equation}
+
+\section{Question 2}
+
+Consider the field:
+
+\begin{equation}
+  \vc{F}{} = x^2 \mathbf{i} +  y \mathbf{j} + z \mathbf{k}
+\end{equation}
+
+Find the flux of this field through the surface:
+
+\begin{equation}
+  x^2 + y^2 + 1 \leq z \leq 5
+\end{equation}
+
+\section{Challenge Question}
+
+Consider the field:
+
+\begin{equation}
+  \frac{\mathbf{F} = x \mathbf{i} + y \mathbf{j} + z \mathbf{k}}
+  {\sqrt{x^2 + y^2 + z^2}}
+\end{equation}
+
+Find the flux through the surface:
+
+\begin{equation}
+  a^2 \leq x^2 + y^2 + z^2 \leq b^2
+\end{equation}  
+
+\end{document}
