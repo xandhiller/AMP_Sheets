@@ -1,0 +1,198 @@
+\documentclass{article}
+\author{Alex Hiller}
+\title{Final Exam Revision for Advanced Mathematics and Physics}
+% Type-setting
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+\usepackage[margin=3cm]{geometry} % Formatting
+
+% Packages
+\usepackage[backend=biber]{biblatex}  % Referencing
+\addbibresource{/home/polluticorn/GitHub/configuration/list.bib}
+\usepackage{amsmath}                  % Mathematics
+\usepackage{amssymb}                  % Mathematics
+\usepackage{listings}                 % Listings
+\usepackage{esint}
+\usepackage{color}                    % Listings
+\usepackage{courier}                  % Listings
+\usepackage{circuitikz}               % Circuits
+\usepackage{titlesec}                 % Section Formatting
+
+% Code Formatting 
+\input{/home/polluticorn/GitHub/texTemplates/codeFormat}
+
+% Math Macros
+\input{/home/polluticorn/GitHub/texTemplates/mathMacros}
+
+% Section formatting
+\titleformat{\section}{\huge \bfseries}{}{0em}{}[]
+\titleformat{\subsection}{\Large \bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\bfseries}{}{0em}{}
+
+% Note Taking Macros
+\input{/home/polluticorn/GitHub/texTemplates/noteTaking}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Mathematics Topics}
+\begin{itemize}
+  \item Line Integrals
+  \item Green's Theorem
+  \item Stoke's Theorem
+  \item Divergence Theorem
+  \item Gradient
+  \item Divergence
+  \item Curl
+  \item Complex Roots
+  \item Maclaurin Series 
+  \item Laurent Series
+  \item Residues
+  \item Contour Integrals
+  \item Inverse Laplace Transforms
+\end{itemize}
+
+
+\section{Physics Topics}
+\begin{itemize}
+  \item Partial Differential Equations
+  \item Shrodinger's Wave Equation
+  \item Particle in a box
+  \item Heisenberg's Uncertainty Principle
+  \item Snell's Law
+  \item Diffraction and Interference -- Young's Double Slit Experiment
+  \item De Broglie Waves
+  \item Energy-Momentum Relationship
+  \item Derive an Interesting Equation
+  \item Compton Scattering
+  \item Bohr Model of the atom --  be able to prove the diameter of an atom is 
+    approximately an amstrong (\AA = $ 10^{-10} $m)
+  \item Solving the heat equation with boundary conditions
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Recommended Resources}
+Split by Physics/Mathematics and then listed in order of importance:
+\subsection{Physics}
+\begin{itemize}
+  \item Revision lecture
+  \item Lecture Notes' Additional Notes -- learn the derivations mentioned in
+    the revision lecture. 
+  \item Learn the rest of the derivations. 
+\end{itemize}
+\subsection{Mathematics}
+\begin{itemize}
+  \item Examples in the lecture notes
+  \item Tutorial problems
+  \item \textit{Vector Calculus} by Susan J. Colley \\
+    (there are solutions/instructor's manuals for this, which gives a good 
+    feedback loop).
+  \item \textit{Problems and Solutions for Complex Analysis} by Rami Shakarchi
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Radioactive Decay}
+Derive the formula for the number of atoms present during radioactive decay, 
+$N(t)$, given that:
+
+\begin{equation}
+  - \frac{dN}{dt} \propto N
+\end{equation}
+
+\begin{equation}
+  - \frac{dN}{dt} = \lambda dt
+\end{equation}
+
+Where:
+
+$N \equiv$ the number of atoms present
+
+$\lambda \equiv$ rate of radioactive decay (specific to the element)
+
+$N_{0} \equiv$ is the number of atoms present at $t=0$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+% Page 495, Example 4
+\section{Gauss'/Divergence Theorem}
+Consider the field:
+
+\begin{equation}
+  \mathbf{F} = e^{y}_{} \cos(z) \mathbf{i} + 
+  \sqrt{x^{3}_{} + 1} \sin(z)  \mathbf{j} +
+  ( x^{2}_{} + y^{2}_{} + 3 )  \mathbf{k}
+\end{equation}
+
+And the surface:
+
+\begin{equation}
+  z = (1- x^{2}_{} - y^{2}_{} ) e^{1 - x^{2}_{} - 3y^{2}_{}}_{} 
+  \text{for } z \geq 0
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+% Page 488, Exercise 1. 
+\section{Parameterised Surface}
+
+Consider the field:
+
+\begin{equation}
+  \mathbf{X}(s,t) = \begin{bmatrix} s \\ s+t \\ t  \end{bmatrix}
+\end{equation}
+
+Where $0 \leq s \leq 1$ and $0 \leq t \leq 2$
+
+\begin{equation}
+  \int^{}_{}  \int^{}_{\mathbf{X}} \left( x^{2} + y^{2} + z^{2}  \right) dS
+\end{equation}
+
+Ask yourself, what is visually happening here?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Computing the Roots of Complex Numbers}
+
+Find the expressions for all unique roots of the following complex numbers:
+
+\begin{equation}
+  \sqrt{z_{a}} = -i
+\end{equation}
+
+\begin{equation}
+  \left( 82,3543 \ e^{i \frac{\pi}{3}} \right)^{\frac{1}{7}}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Contour Integration}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Maclaurin and Laurent Series}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Compton Scattering and Snell's Law}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Schrodinger's Wave Equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Partial Differential Equations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Stoke's Theorem}
+
+
+\end{document}
