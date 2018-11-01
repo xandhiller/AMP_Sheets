@@ -174,25 +174,126 @@ Find the expressions for all unique roots of the following complex numbers:
 \clearpage
 \section{Contour Integration}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
-\section{Maclaurin and Laurent Series}
+Find:
 
+\begin{equation}
+  \int^{}_{C} \left( x^2 + i y^2 \right) dz
+\end{equation}
+
+Where $C$ is the parabola $y = x^{2}_{}$ from $(0,0) \text{ to } (2,2)$
+
+\vspace{0.5cm}
+
+Then:
+
+Determine if $x^2 + iy^2$ is analytic and calculate:
+
+\begin{equation}
+  \oint^{}_{C} \left( x^2 + i y^2 \right) dz 
+\end{equation}
+
+Where $C$ has now changed to a circle with radius 1 around the origin of the 
+complex plane. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\section{Compton Scattering and Snell's Law}
+\section{Compton Scattering}
+
+Compton scattering is described by:
+
+\begin{equation}
+  \lambda^{'}_{} - \lambda = \frac{h}{m_{e} c} \left( 1 - \cos\theta  \right)
+\end{equation}
+
+(i) If a photon hits a stationary electron and refracts with an angle of $85^{o}$, 
+what is the change in wavelength of the photon?
+
+(ii) Draw a diagram of this.
+
+(iii) Would the colour change be visible to the human eye?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Schrodinger's Wave Equation}
 
+Prove that the following is a solution to Schrodinger's wave equation. 
+
+\begin{equation}
+  \Psi(x,t) = A e^{i(kx-wt)}
+\end{equation}
+
+Where we're working with a single dimensional version of the wave equation with 
+no potential field, which has the form: 
+
+\begin{equation}
+  i \hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} 
+  \frac{\partial^2 \Psi}{\partial x^2} 
+\end{equation}
+
+\vspace{1cm}
+Hint: Think about how "proving this is a solution" is done, otherwise you might 
+get to the end and not realise it.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Partial Differential Equations}
 
+The heat equation is given by:
+
+\begin{equation}
+  \frac{\partial u }{\partial t} = \kappa \frac{\partial^{2}u}{\partial x^{2}}
+\end{equation}
+
+With boundary conditions given by:
+
+\begin{equation}
+  u(x,0) = f(x) \qquad u(0,t) = 0 \qquad u(L,t) = 0
+\end{equation}
+
+There exists a rod of length $L$.
+
+At $t=0$ it has a heat distribution of:
+
+\begin{equation}
+  f(x) = 12 \sin\left( \frac{9 \pi x}{L} \right) - 
+  9 \sin\left( \frac{4 \pi x}{L} \right)
+\end{equation}
+
+By inspection (or by the \textit{Lecture 5 Extra Notes}) what is the 
+final form of $u(x,t)$?
+
+\vspace{1cm}
+Note: for the final form, assume $\kappa$ is yet to be known and $t$ is a variable.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page 491, Example 1, Turn to the page after for the line integral soln.
 \clearpage
 \section{Stoke's Theorem}
 
+Stoke's Theorem is: 
+
+\begin{equation}
+  \int^{}_{} \int^{}_{\mathbf{S}} \nabla \times \mathbf{F} \cdot d\mathbf{S} = 
+  \oint_{\partial S} \mathbf{F} \cdot d\mathbf{s}
+\end{equation}
+
+For a surface:
+
+\begin{equation}
+  S: \qquad z = 9 -x^{2} - y^{2} \qquad \text{for $z \geq$ 0}
+\end{equation}
+
+And a field:
+
+\begin{equation}
+  \mathbf{F} = \left( 2z - y \right) \mathbf{i}  +
+  \left( x + z \right) \mathbf{j} + 
+  \left( 3x - 2y \right) \mathbf{k}
+\end{equation}
+
+Calculate:
+
+\begin{equation}
+  \int^{}_{} \int^{}_{\mathbf{S}} \nabla \times \mathbf{F} \cdot d\mathbf{S}
+\end{equation}
 
 \end{document}
